@@ -39,6 +39,9 @@
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo\ui\ui_qtconvclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\2a1227a3c12c4022621e8ce5ae5e41d4\autouic_(CONFIG).stamp.rule">

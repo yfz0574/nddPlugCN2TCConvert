@@ -90,7 +90,6 @@
       <AdditionalOptions>%(AdditionalOptions) /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
@@ -101,6 +100,8 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Debug";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Debug\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
@@ -278,7 +279,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -289,6 +289,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="RelWithDebInfo";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
@@ -338,7 +340,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <CustomBuild Include="F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\2a1227a3c12c4022621e8ce5ae5e41d4\autouic_(CONFIG).stamp.rule">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd F:\myproj\nddPlugCN2TCConvert\vs2019
 if %errorlevel% neq 0 goto :cmEnd
@@ -353,7 +356,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui;H:\develop\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Debug.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
 cd F:\myproj\nddPlugCN2TCConvert\vs2019
 if %errorlevel% neq 0 goto :cmEnd
@@ -368,7 +372,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui;H:\develop\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Release.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
 cd F:\myproj\nddPlugCN2TCConvert\vs2019
 if %errorlevel% neq 0 goto :cmEnd
@@ -383,7 +388,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui;H:\develop\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_MinSizeRel.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
 cd F:\myproj\nddPlugCN2TCConvert\vs2019
 if %errorlevel% neq 0 goto :cmEnd
@@ -465,6 +471,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\ch2tcexport.cpp" />
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.cpp" />
+    <ClInclude Include="..\src\util.hpp" />
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\openccTranse.h" />
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.h" />
     <None Include="F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui">

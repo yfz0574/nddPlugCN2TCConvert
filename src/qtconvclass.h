@@ -9,6 +9,9 @@
 #include <qsciscintilla.h>
 #include "openccTranse.h"
 #include "ui_qtconvclass.h"
+#include <QAction>
+#include <QObject>
+#include <QWidget>
 
 //using namespace std;
 
@@ -28,7 +31,7 @@ class QtConvClass : public QWidget
 public:
 	QtConvClass(QWidget *parent, QsciScintilla* pEdit);
 	~QtConvClass();
-
+	void getConvMenu(QMenu* menu);
 	void showEvent(QShowEvent* event);
 
 

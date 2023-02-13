@@ -1,9 +1,14 @@
 #pragma once
 #include "qtconvclass.h"
-//#include <qsciscintilla.h>
+//#include <QDockWidget>
+//#include <QHeaderView>
+//#include <QMainWindow>
+#include <QMenuBar>
 #include <QMessageBox>
+//#include <QTreeView>
+//#include <qsciscintilla.h>
 #include <qscint/scintilla/include/Scintilla.h>
-
+#include "util.hpp"
 QtConvClass::QtConvClass(QWidget *parent, QsciScintilla* pEdit)
 	: QWidget(parent)
 {
@@ -20,10 +25,28 @@ void QtConvClass::showEvent(QShowEvent* event)
 	
 }
 
+void QtConvClass::getConvMenu(QMenu* menu)
+{
+	menu->addAction("convert ch to tc ", this, [this] {
+		on_s2t();
+		},
+		Qt::CTRL + Qt::Key_F9);
+	menu->addAction("convert tc to ch ", this, [this] {
+		 
+		on_t2s();
+		},
+		Qt::CTRL + Qt::Key_F10);
+	//menu->addAction("config", this, [this] {
+		//conver(); 
+	//	;
+	//	},
+	//	Qt::CTRL + Qt::Key_F8);
 
+	
+}
 void QtConvClass::on_s2t() {
 
-	//intext_= m_pEdit->selectedText();
+	intext_= m_pEdit->selectedText();
 	if (intext_.isEmpty())
 	{
 		return;
@@ -46,7 +69,7 @@ void QtConvClass::on_s2t() {
 	openccTranse transe;
 	oss2_ = reinterpret_cast<const char*>(u8"");
 	QString str = QCoreApplication::applicationDirPath();
-	str += "/plugin/nddToys";///STCharacters.ocd2
+	str += "/plugin/nddCN2TCConvert";///STCharacters.ocd2
 	transe.configFileName_ = str.toStdString()+"/s2t.json";
 	//const std::string& text = reinterpret_cast<const char*>(u8"ÑàÑàÓÚ·É²î³ØÆäÓðÖ®×ÓÓÚ¹éÔ¶ËÍÓÚÒ°");
 	
@@ -69,7 +92,7 @@ void QtConvClass::on_s2t() {
 void QtConvClass::on_t2s() {
 
 	//QString text = m_pEdit->selectedText();
-	//intext_ = m_pEdit->selectedText();
+	intext_ = m_pEdit->selectedText();
 	if(intext_.isEmpty())
 	{
 		this->close();
