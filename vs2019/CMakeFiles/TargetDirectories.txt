@@ -1,0 +1,3 @@
+F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/nddPlugCN2TCConvert.dir
+F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/ALL_BUILD.dir
+F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\ch2tcexport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\openccTranse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Debug\ui\ui_qtconvclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Release\ui\ui_qtconvclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_MinSizeRel\ui\ui_qtconvclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo\ui\ui_qtconvclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\2a1227a3c12c4022621e8ce5ae5e41d4\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\myproj\nddPlugCN2TCConvert\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Debug.stamp" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Release.stamp" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AF787469-845B-3E53-B836-6E1D548453FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EE91FAC3-6F33-33BA-8532-CE6E8F002AA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0C77DC51-D107-3829-A372-177CCE82B424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

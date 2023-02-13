@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtConvClass</class>
+ <widget class="QWidget" name="QtConvClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>365</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtConvClass</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>notepad-- 简体繁体转换插件</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>390</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="t2sBt">
+      <property name="text">
+       <string>繁体转简体</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="s2tBt">
+      <property name="text">
+       <string>简体转繁体</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="closeBtn">
+      <property name="text">
+       <string>关闭</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>目前仅支持UTF-8编码</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>s2tBt</sender>
+   <signal>clicked()</signal>
+   <receiver>QtConvClass</receiver>
+   <slot>on_s2t()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>t2sBt</sender>
+   <signal>clicked()</signal>
+   <receiver>QtConvClass</receiver>
+   <slot>on_t2s()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>158</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>QtConvClass</receiver>
+   <slot>on_close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_upper()</slot>
+  <slot>on_lower()</slot>
+  <slot>on_amount()</slot>
+  <slot>on_s2t()</slot>
+  <slot>on_t2s()</slot>
+  <slot>on_close()</slot>
+ </slots>
+</ui>

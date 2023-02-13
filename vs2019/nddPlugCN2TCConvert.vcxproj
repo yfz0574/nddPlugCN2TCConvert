@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{817A265D-91D5-36C6-A71C-5DBC83648B37}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>nddPlugCN2TCConvert</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nddPlugCN2TCConvert.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nddPlugCN2TCConvert</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nddPlugCN2TCConvert.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nddPlugCN2TCConvert</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nddPlugCN2TCConvert.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nddPlugCN2TCConvert</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nddPlugCN2TCConvert.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nddPlugCN2TCConvert</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Debug;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Debug";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Debug\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Debug;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Debug;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target nddPlugCN2TCConvert</Message>
+      <Command>setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E cmake_autogen F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/nddPlugCN2TCConvert_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E touch F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/autouic_Debug.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>F:\libsrc\OpenCC\build\src\Debug\opencc.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Concurrentd.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Networkd.lib;F:\myproj\notepad--master\notepad--\build\Debug\qmyedit_qt5d.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Guid.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/myproj/nddPlugCN2TCConvert/vs2019/Debug/nddPlugCN2TCConvert.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/myproj/nddPlugCN2TCConvert/vs2019/Debug/nddPlugCN2TCConvert.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Release;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Release";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Release\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Release;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Release;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target nddPlugCN2TCConvert</Message>
+      <Command>setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E cmake_autogen F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/nddPlugCN2TCConvert_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E touch F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/autouic_Release.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>F:\libsrc\OpenCC\build\src\Release\opencc.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Concurrent.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;F:\myproj\notepad--master\notepad--\build\Release\qmyedit_qt5.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/myproj/nddPlugCN2TCConvert/vs2019/Release/nddPlugCN2TCConvert.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/myproj/nddPlugCN2TCConvert/vs2019/Release/nddPlugCN2TCConvert.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_MinSizeRel;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="MinSizeRel";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"MinSizeRel\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_MinSizeRel;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_MinSizeRel;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target nddPlugCN2TCConvert</Message>
+      <Command>setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E cmake_autogen F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/nddPlugCN2TCConvert_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E touch F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/autouic_MinSizeRel.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>F:\libsrc\OpenCC\build\src\Release\opencc.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Concurrent.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;F:\myproj\notepad--master\notepad--\build\Release\qmyedit_qt5.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/myproj/nddPlugCN2TCConvert/vs2019/MinSizeRel/nddPlugCN2TCConvert.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/myproj/nddPlugCN2TCConvert/vs2019/MinSizeRel/nddPlugCN2TCConvert.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtANGLE" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "H:/develop/Qt/5.15.2/msvc2019_64/include/QtNetwork"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="RelWithDebInfo";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target nddPlugCN2TCConvert</Message>
+      <Command>setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E cmake_autogen F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/nddPlugCN2TCConvert_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+D:\devsoft\CMake3.25\bin\cmake.exe -E touch F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/autouic_RelWithDebInfo.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>F:\libsrc\OpenCC\build\src\Release\opencc.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Concurrent.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Network.lib;F:\myproj\notepad--master\notepad--\build\Release\qmyedit_qt5.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Gui.lib;H:\develop\Qt\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/myproj/nddPlugCN2TCConvert/vs2019/RelWithDebInfo/nddPlugCN2TCConvert.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/myproj/nddPlugCN2TCConvert/vs2019/RelWithDebInfo/nddPlugCN2TCConvert.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\2a1227a3c12c4022621e8ce5ae5e41d4\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui;H:\develop\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui;H:\develop\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui;H:\develop\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd F:\myproj\nddPlugCN2TCConvert\vs2019
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui;H:\develop\Qt\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\myproj\nddPlugCN2TCConvert\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/myproj/nddPlugCN2TCConvert/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\devsoft\CMake3.25\bin\cmake.exe -SF:/myproj/nddPlugCN2TCConvert -BF:/myproj/nddPlugCN2TCConvert/vs2019 --check-stamp-file F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeParseArguments.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeSystem.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/myproj/nddPlugCN2TCConvert/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\devsoft\CMake3.25\bin\cmake.exe -SF:/myproj/nddPlugCN2TCConvert -BF:/myproj/nddPlugCN2TCConvert/vs2019 --check-stamp-file F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeParseArguments.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeSystem.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/myproj/nddPlugCN2TCConvert/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\devsoft\CMake3.25\bin\cmake.exe -SF:/myproj/nddPlugCN2TCConvert -BF:/myproj/nddPlugCN2TCConvert/vs2019 --check-stamp-file F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeParseArguments.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeSystem.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/myproj/nddPlugCN2TCConvert/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\devsoft\CMake3.25\bin\cmake.exe -SF:/myproj/nddPlugCN2TCConvert -BF:/myproj/nddPlugCN2TCConvert/vs2019 --check-stamp-file F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeParseArguments.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\devsoft\CMake3.25\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\3.25.2\CMakeSystem.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;H:\develop\Qt\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\ch2tcexport.cpp" />
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.cpp" />
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\openccTranse.h" />
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.h" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui">
+    </None>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Debug\ui\ui_qtconvclass.h" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Release\ui\ui_qtconvclass.h" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_MinSizeRel\ui\ui_qtconvclass.h" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo\ui\ui_qtconvclass.h" />
+    <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\myproj\nddPlugCN2TCConvert\vs2019\ZERO_CHECK.vcxproj">
+      <Project>{8551B12E-F6B6-3AFD-9515-F78FF6EB7B9D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
