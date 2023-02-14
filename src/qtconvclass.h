@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <QWidget>
 #include <iostream>
@@ -7,19 +7,25 @@
 #include <iterator>
 #include <math.h>
 #include <qsciscintilla.h>
+#include "scintillaeditor.h"
 #include "openccTranse.h"
 #include "ui_qtconvclass.h"
 #include <QAction>
 #include <QObject>
-#include <QWidget>
+
 
 //using namespace std;
+#ifndef QTCONVCLASS_H
+#define QTCONVCLASS_H
+#include <pluginGL.h>
+
+
 
 using iter = std::vector<std::string>::const_iterator;
 #if  defined   NDEBUG
-#define   assert£¨condition£©   £¨£¨void£©   0£© 
+#define   assertï¼ˆconditionï¼‰   ï¼ˆï¼ˆvoidï¼‰   0ï¼‰ 
 #else 
-#define assert£¨condition£© _assert£¨£¨condition£©,  condition,  __FILE__,  __LINE__£©
+#define assertï¼ˆconditionï¼‰ _assertï¼ˆï¼ˆconditionï¼‰,  condition,  __FILE__,  __LINE__ï¼‰
 
 #endif
 
@@ -29,25 +35,31 @@ class QtConvClass : public QWidget
 	Q_OBJECT
 
 public:
-	QtConvClass(QWidget *parent, QsciScintilla* pEdit);
+	QtConvClass(QWidget *parent, QsciScintilla* pEdit, NDD_PROC_DATA s_procData);
 	~QtConvClass();
 	void getConvMenu(QMenu* menu);
-	void showEvent(QShowEvent* event);
-
+	void setScintilla(const std::function<QsciScintilla* ()>& cb);
+	//void showEvent(QShowEvent* event);
+	std::function<QsciScintilla* ()> s_getCurEdit;
 
 	
 	std::string convertText(const std::string text);
 	//void test();
 
 private slots:
-	void on_s2t();//¼ò×ª·±Ìå
-	void on_t2s();//·±Ìå×ª¼òÌå
+	void on_s2t();//ç®€è½¬ç¹ä½“
+	void on_t2s();//ç¹ä½“è½¬ç®€ä½“
 	void on_close();
 private:
 	Ui::QtConvClass ui;
-	QsciScintilla* m_pEdit;
-	QString intext_;
+	ScintillaEditor* scint_editor_;
+	std::string intext_;
 	std::ostringstream oss_;
 	QString oss2_;
-	const size_t maxS2tTextLen_ = 1000'000;//²âÊÔºóÔÙ¶¨×î´ó¼ò·±×ª»»ÎÄ±¾³¤¶È¡£
+	size_t maxS2tTextLen_;//æµ‹è¯•åå†å®šæœ€å¤§ç®€ç¹è½¬æ¢æ–‡æœ¬é•¿åº¦ã€‚
+	NDD_PROC_DATA* pProcData_;
+	NDD_PROC_DATA s_procData;
+	QWidget* s_pMainNotepad;
+	
 };
+#endif // !QTCONVCLASS_H

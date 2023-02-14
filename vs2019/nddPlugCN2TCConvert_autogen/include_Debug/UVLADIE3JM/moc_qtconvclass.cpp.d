@@ -21,6 +21,8 @@ F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/include_Debug/U
   F:/libsrc/OpenCC/src/opencc.h \
   F:/libsrc/OpenCC/src/opencc_config.h \
   F:/myproj/nddPlugCN2TCConvert/src/openccTranse.h \
+  F:/myproj/nddPlugCN2TCConvert/src/scintillaeditor.h \
+  F:/myproj/notepad--master/notepad--/src/pluginGL.h \
   F:/myproj/notepad--master/notepad--/src/qscint/src/Qsci/qscicommand.h \
   F:/myproj/notepad--master/notepad--/src/qscint/src/Qsci/qscidocument.h \
   F:/myproj/notepad--master/notepad--/src/qscint/src/Qsci/qsciglobal.h \
@@ -31,6 +33,7 @@ F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/include_Debug/U
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/QObject \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/QPoint \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/QPointer \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/QString \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/QStringList \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/QTimer \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qalgorithms.h \
@@ -56,6 +59,7 @@ F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/include_Debug/U
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qline.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qlist.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qlogging.h \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qmap.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qmargins.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qmetatype.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qmutex.h \
@@ -88,6 +92,7 @@ F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/include_Debug/U
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qtcore-config.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qtimer.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qtypeinfo.h \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qvariant.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qvarlengtharray.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qvector.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtCore/qversiontagging.h \
@@ -97,6 +102,7 @@ F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/include_Debug/U
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qfont.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qfontinfo.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qfontmetrics.h \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qicon.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qimage.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qkeysequence.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qmatrix.h \
@@ -114,9 +120,14 @@ F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/include_Debug/U
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/QAbstractScrollArea \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/QAction \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/QMenu \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/QWidget \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qabstractscrollarea.h \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qaction.h \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qactiongroup.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qframe.h \
+  H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qmenu.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   H:/develop/Qt/5.15.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \

@@ -71,6 +71,18 @@
 	"HEADERS" : 
 	[
 		[
+			"F:/myproj/nddPlugCN2TCConvert/src/ch2tcexport.h",
+			"MU",
+			"UVLADIE3JM/moc_ch2tcexport.cpp",
+			null
+		],
+		[
+			"F:/myproj/nddPlugCN2TCConvert/src/coreApplication.h",
+			"MU",
+			"UVLADIE3JM/moc_coreApplication.cpp",
+			null
+		],
+		[
 			"F:/myproj/nddPlugCN2TCConvert/src/openccTranse.h",
 			"MU",
 			"UVLADIE3JM/moc_openccTranse.cpp",
@@ -96,6 +108,7 @@
 	"MOC_COMPILATION_FILE_Release" : "F:/myproj/nddPlugCN2TCConvert/vs2019/nddPlugCN2TCConvert_autogen/mocs_compilation_Release.cpp",
 	"MOC_DEFINITIONS" : 
 	[
+		"QSCINTILLA_DLL",
 		"QT_CONCURRENT_LIB",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
@@ -107,6 +120,7 @@
 	],
 	"MOC_DEFINITIONS_Debug" : 
 	[
+		"QSCINTILLA_DLL",
 		"QT_CONCURRENT_LIB",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
@@ -164,6 +178,7 @@
 	"SOURCES" : 
 	[
 		[ "F:/myproj/nddPlugCN2TCConvert/src/ch2tcexport.cpp", "MU", null ],
+		[ "F:/myproj/nddPlugCN2TCConvert/src/coreApplication.cpp", "MU", null ],
 		[ "F:/myproj/nddPlugCN2TCConvert/src/qtconvclass.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

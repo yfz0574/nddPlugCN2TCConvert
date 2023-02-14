@@ -1,10 +1,10 @@
-#pragma once
+ï»¿#pragma once
 //template<typename T>
 //using rcast = reinterpret_cast<const T*>;
-//Èç¹û²»Ï²»¶ÓÃÄ£°å£¬Ò²¿ÉÒÔÈ¥µôÕâ½Ú£¬Ö±½ÓÓÃreinterpret_cast<const char*>´úÌæ£¬µ«²»½¨ÒéÖ±½ÓÓÃ(const char*)Ç¿×ª¡£ÔÚC++20Ö®Ç°¿ÉÒÔ²»¼ÓÇ¿×ª£¬20ÖØĞÂ¶¨ÒåÁËu8£¬ĞèÒªÇ¿×ªÁË¡£
+//å¦‚æœä¸å–œæ¬¢ç”¨æ¨¡æ¿ï¼Œä¹Ÿå¯ä»¥å»æ‰è¿™èŠ‚ï¼Œç›´æ¥ç”¨reinterpret_cast<const char*>ä»£æ›¿ï¼Œä½†ä¸å»ºè®®ç›´æ¥ç”¨(const char*)å¼ºè½¬ã€‚åœ¨C++20ä¹‹å‰å¯ä»¥ä¸åŠ å¼ºè½¬ï¼Œ20é‡æ–°å®šä¹‰äº†u8ï¼Œéœ€è¦å¼ºè½¬äº†ã€‚
 template <typename To, typename From>
 const To rcast(const From& obj) {
 	return reinterpret_cast<const To>(obj);
 }
 
-//QString str = rcast<const char*>(u8"¼ò·±Ìå×ª»»");
+//QString str = rcast<const char*>(u8"ç®€ç¹ä½“è½¬æ¢");

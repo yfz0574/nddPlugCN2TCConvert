@@ -1,90 +1,152 @@
-#pragma once
+ï»¿#pragma once
 #include "qtconvclass.h"
-//#include <QDockWidget>
-//#include <QHeaderView>
-//#include <QMainWindow>
+//#include "ch2tcexport.h"
 #include <QMenuBar>
 #include <QMessageBox>
-//#include <QTreeView>
-//#include <qsciscintilla.h>
 #include <qscint/scintilla/include/Scintilla.h>
 #include "util.hpp"
-QtConvClass::QtConvClass(QWidget *parent, QsciScintilla* pEdit)
+#include <QApplication>
+#include <QTextStream>
+#include <QDebug>
+#include <iostream>
+//#if defined(DEBUG)  || defined(_DEBUG) //MSVC defines _DEBUG
+#define CMDOUTPUT
+#if defined(CMDOUTPUT)
+//#pragma comment( linker, "/subsystem:console /entry:WinMainCRTStartup")
+#endif
+QtConvClass::QtConvClass(QWidget *parent, QsciScintilla* pEdit, NDD_PROC_DATA s_procData)
 	: QWidget(parent)
 {
-	ui.setupUi(this);
-	m_pEdit = pEdit;
+	//ui.setupUi(this);
+	//m_pEdit = pEdit;
+	scint_editor_ = nullptr;
+	maxS2tTextLen_ = 1000'000;//æµ‹è¯•åå†å®šæœ€å¤§ç®€ç¹è½¬æ¢æ–‡æœ¬é•¿åº¦ã€‚
+	//getConvMenu(s_procData.m_rootMenu);
+	
+
 }
 
 QtConvClass::~QtConvClass()
-{}
-void QtConvClass::showEvent(QShowEvent* event)
 {
-	//qDebug() << "´°¿ÚÏÔÊ¾À²~";
-	intext_= m_pEdit->selectedText();
-	
+	// å…³é—­æ§åˆ¶å°çª—å£
+	//FreeConsole();
 }
 
+
+void QtConvClass::setScintilla(const std::function<QsciScintilla* ()>& cb)
+{
+	if (scint_editor_)
+	{
+		delete scint_editor_;
+		scint_editor_ = nullptr;
+	}
+
+	scint_editor_ = new ScintillaEditor(cb);
+
+}
 void QtConvClass::getConvMenu(QMenu* menu)
 {
-	menu->addAction("convert ch to tc ", this, [this] {
+	//QMessageBox msgBox;
+	//msgBox.setText(reinterpret_cast<const char*>(u8"è¿›å…¥äº†getConvMenu()#39ï¼"));
+
+	menu->addAction(reinterpret_cast<const char*>(u8"ç®€ä½“è½¬ç¹ä½“"),  [this] {
 		on_s2t();
 		},
-		Qt::CTRL + Qt::Key_F9);
-	menu->addAction("convert tc to ch ", this, [this] {
+		Qt::CTRL + Qt::Key_F11);
+	menu->addAction(reinterpret_cast<const char*>(u8"ç¹ä½“è½¬ç®€ä½“"),  [this] {
 		 
 		on_t2s();
 		},
-		Qt::CTRL + Qt::Key_F10);
-	//menu->addAction("config", this, [this] {
-		//conver(); 
-	//	;
-	//	},
-	//	Qt::CTRL + Qt::Key_F8);
+		Qt::CTRL + Qt::Key_F12);
+	//QAction* QMenu::addAction(const QString & text, Functor functor, const QKeySequence & shortcut = 0)
 
+	//connect(submenuAction, &QAction::triggered, this, &MyClass::handleSubmenuAction);
 	
+#if 1==0
+	// åˆ›å»ºæ§åˆ¶å°çª—å£
+	AllocConsole();
+	FILE* stream;
+	freopen_s(&stream, "CONOUT$", "w", stdout);
+	freopen_s(&stream, "CONOUT$", "w", stderr);
+
+	// å°†æ ‡å‡†è¾“å‡ºå’Œæ ‡å‡†é”™è¯¯é‡å®šå‘åˆ°æ§åˆ¶å°çª—å£
+	QTextStream out(stdout);
+	QTextStream err(stderr);
+
+	qInstallMessageHandler([](QtMsgType type, const QMessageLogContext& context, const QString& msg) {
+		QByteArray localMsg = msg.toLocal8Bit();
+		switch (type) {
+		case QtDebugMsg:
+			fprintf(stderr, "Debug: %s (%s:%u, %s)\n", localMsg.constData(), context.file, context.line, context.function);
+			break;
+		case QtInfoMsg:
+			fprintf(stderr, "Info: %s (%s:%u, %s)\n", localMsg.constData(), context.file, context.line, context.function);
+			break;
+		case QtWarningMsg:
+			fprintf(stderr, "Warning: %s (%s:%u, %s)\n", localMsg.constData(), context.file, context.line, context.function);
+			break;
+		case QtCriticalMsg:
+			fprintf(stderr, "Critical: %s (%s:%u, %s)\n", localMsg.constData(), context.file, context.line, context.function);
+			break;
+		case QtFatalMsg:
+			fprintf(stderr, "Fatal: %s (%s:%u, %s)\n", localMsg.constData(), context.file, context.line, context.function);
+			abort();
+		}
+		});
+#endif
 }
 void QtConvClass::on_s2t() {
-
-	intext_= m_pEdit->selectedText();
-	if (intext_.isEmpty())
+	
+	//QMessageBox msgBox;
+	//msgBox.setText(reinterpret_cast<const char*>(u8"è¿›å…¥äº†on_s2t()#100ï¼"));
+	//int ret = msgBox.exec();
+	//qDebug() << reinterpret_cast<const char*>(u8"è¿›å…¥äº†on_s2t()#102");
+	if(scint_editor_ ==nullptr)
+	{
+		QMessageBox::information (this,"critical:","m_pEdit is nullptr!");
+	}
+	intext_= scint_editor_->getchText();
+	if (intext_.length() == 0)
 	{
 		return;
-		this->close();
+		//this->close();
 	}
-	int codepage = static_cast<int>(m_pEdit->SendScintilla(SCI_GETCODEPAGE,0ul,nullptr ));
+	//qDebug() << reinterpret_cast<const char*>(u8"è¿›å…¥äº†on_s2t()#");
+	int codepage = scint_editor_->getCodePage();
+	//qDebug() <<"intext="<<QString::fromStdString( intext_)<< ",codepage=" << codepage;
 	if (codepage != SC_CP_UTF8)
 	{
 		QMessageBox msgBox;
-		msgBox.setText("ÔİÎ´Ö§³Ö·ÇUTF8±àÂëµÄÎÄ¼ş£¡");
+		msgBox.setText(reinterpret_cast<const char*>(u8"æš‚æœªæ”¯æŒéUTF8ç¼–ç çš„æ–‡ä»¶ï¼"));
 		//msgBox.setInformativeText("Do you want to save your changes?");
 		//msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
 		//msgBox.setDefaultButton(QMessageBox::Save);
 		int ret = msgBox.exec();
-		this->close();
+		//this->close();
 		return;
 		
 	}
-
+	//msgBox.setText(reinterpret_cast<const char*>(u8"è¿›å…¥äº†on_s2t()#128ï¼"));
+	// ret = msgBox.exec();
 	openccTranse transe;
 	oss2_ = reinterpret_cast<const char*>(u8"");
 	QString str = QCoreApplication::applicationDirPath();
-	str += "/plugin/nddCN2TCConvert";///STCharacters.ocd2
-	transe.configFileName_ = str.toStdString()+"/s2t.json";
-	//const std::string& text = reinterpret_cast<const char*>(u8"ÑàÑàÓÚ·É²î³ØÆäÓğÖ®×ÓÓÚ¹éÔ¶ËÍÓÚÒ°");
+	str += reinterpret_cast<const char*>(u8"/plugin/nddCN2TCConvert");///STCharacters.ocd2
+	transe.configFileName_ = str.toStdString()+ reinterpret_cast<const char*>(u8"/s2t.json");
+	//const std::string& text = reinterpret_cast<const char*>(u8"ç‡•ç‡•äºé£å·®æ± å…¶ç¾½ä¹‹å­äºå½’è¿œé€äºé‡");
 	
 	try {
 			opencc_t od = opencc_open(transe.configFileName_.c_str());
-			char* converted = opencc_convert_utf8(od, intext_.toStdString().c_str(), (size_t)-1);
-			oss2_ = converted;
+			char* converted = opencc_convert_utf8(od, intext_.c_str(), (size_t)-1);
+			//oss2_ = converted;
+			scint_editor_->replaceSelection(converted);
 			opencc_convert_utf8_free(converted);
-			m_pEdit->replaceSelectedText(oss2_);
-			this->close();
+			//this->close();
 			return;
 		}
 	catch (Exception& ex) {
 		throw std::runtime_error(ex.what());
-		this->close();
+		//this->close();
 		return;
 	}
 	
@@ -92,64 +154,65 @@ void QtConvClass::on_s2t() {
 void QtConvClass::on_t2s() {
 
 	//QString text = m_pEdit->selectedText();
-	intext_ = m_pEdit->selectedText();
-	if(intext_.isEmpty())
+	intext_ = scint_editor_->getchText();
+	if(intext_.length()==0)
 	{
-		this->close();
+		//this->close();
 		return;
 	}
 	ConversionPtr convert;
 	//TextDict dict();
-	int codepage = static_cast<int>(m_pEdit->SendScintilla(SCI_GETCODEPAGE, 0ul, nullptr));
+	int codepage = scint_editor_->getCodePage();
 	if (codepage != SC_CP_UTF8)
 	{
 		QMessageBox msgBox;
-		msgBox.setText(reinterpret_cast<const char*>("ÔİÎ´Ö§³Ö·ÇUTF8±àÂëµÄÎÄ¼ş£¡"));
+		msgBox.setText(reinterpret_cast<const char*>(u8"æš‚æœªæ”¯æŒéUTF8ç¼–ç çš„æ–‡ä»¶ï¼"));
 		//msgBox.setInformativeText("Do you want to save your changes?");
 		//msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
 		//msgBox.setDefaultButton(QMessageBox::Save);
 		int ret = msgBox.exec();
-		this->close();
+		//this->close();
 		return;
 
 	}
 
 	openccTranse transe;
-	oss2_ = reinterpret_cast<const char*>(u8"");
+	//oss2_ = reinterpret_cast<const char*>(u8"");
 	QString str = QCoreApplication::applicationDirPath();
-	str += "/plugin/nddCN2TCConvert";
-	transe.configFileName_ = str.toStdString() + "/t2s.json";
+	str += reinterpret_cast<const char*>(u8"/plugin/nddCN2TCConvert");
+	transe.configFileName_ = str.toStdString() + reinterpret_cast<const char*>(u8"/t2s.json");
 	try {
 		
-		//QMessageBox::information(NULL, "ÌáÊ¾", "½øÈëÁËon_t2s() .try");
+		//QMessageBox::information(NULL, "æç¤º", "è¿›å…¥äº†on_t2s() .try");
 		opencc_t od = opencc_open(transe.configFileName_.c_str());
-		char* converted = opencc_convert_utf8(od, intext_.toStdString().c_str(), (size_t)-1);
+		char* converted = opencc_convert_utf8(od, intext_.c_str(), (size_t)-1);
 		if (converted == nullptr)
 		{
 			QMessageBox msgBox;
 			
 			QString  errstr;
-			errstr = reinterpret_cast<const char*>(u8"×ª»»Ê§°Ü£¡Ô­ÒòÎª£º");
+			errstr = reinterpret_cast<const char*>(u8"è½¬æ¢å¤±è´¥ï¼åŸå› ä¸ºï¼š");
 			errstr += opencc_error();
 			msgBox.setText(errstr);
 			//msgBox.setInformativeText("Do you want to save your changes?");
 			//msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
 			//msgBox.setDefaultButton(QMessageBox::Save);
 			int ret = msgBox.exec();
-			this->close();
+			//this->close();
 			return;
 		}
 		oss2_ = converted;
+		scint_editor_->replaceSelection(converted);
 		opencc_convert_utf8_free(converted);
-		m_pEdit->replaceSelectedText(oss2_);
-		this->close();
+		
+		//this->close();
 		return;
 	}
 	catch (Exception& ex) {
 		
 		QMessageBox msgBox;
 		QString  errstr;
-		errstr = reinterpret_cast<const char*>(u8"×ª»»Ê§°Ü£¡Ô­ÒòÎª£º");
+		errstr = reinterpret_cast<const char*>(u8"è½¬æ¢å¤±è´¥ï¼åŸå› ä¸ºï¼š");
 		//errstr += opencc_error();
 		errstr += ex.what();
 		msgBox.setText(errstr);
@@ -157,23 +220,13 @@ void QtConvClass::on_t2s() {
 		//msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
 		//msgBox.setDefaultButton(QMessageBox::Save);
 		int ret = msgBox.exec();
-		this->close();
+		//this->close();
 		return;
 		//throw std::runtime_error(ex.what());
 		//return;
 	}
 
-
-
-
-
-	//convert_amount(0);
-	//QString outtext;
-	//outtext.fromStdString( oss_.str());
-	//QMessageBox::information(nullptr, "", oss2_);
-	//m_pEdit->setSelection()
-	//m_pEdit->replaceSelectedText(QString("testamount"));
-	m_pEdit->replaceSelectedText(oss2_);
+	//scint_editor_->replaceSelection(converted);
 }
 
 openccTranse::openccTranse(){
@@ -182,10 +235,10 @@ openccTranse::openccTranse(){
 std::string QtConvClass::convertText(const std::string text) {
 
 
-	std::string res =(const char*) u8"";
+	std::string res = reinterpret_cast<const char*>(u8"");
 	if (text.length() > maxS2tTextLen_)
 	{
-		res= reinterpret_cast < const char*>(u8"³¬¹ı×î´ó³¤¶ÈÏŞÖÆ");
+		res= reinterpret_cast < const char*>(u8"è¶…è¿‡æœ€å¤§é•¿åº¦é™åˆ¶");
 		return res;
 	}
 	openccTranse transe;

@@ -59,7 +59,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\nddPlugCN2TCConvert\vs2019\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\myproj\notepad--master\notepad--\vs2019\Debug\plugin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nddPlugCN2TCConvert.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nddPlugCN2TCConvert</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
@@ -98,13 +98,13 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Debug";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;QSCINTILLA_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Debug";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Debug\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;QSCINTILLA_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Debug\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Debug;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -161,13 +161,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Release";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QSCINTILLA_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="Release";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Release\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QSCINTILLA_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"Release\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Release;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -224,13 +224,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="MinSizeRel";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QSCINTILLA_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="MinSizeRel";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"MinSizeRel\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QSCINTILLA_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"MinSizeRel\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_MinSizeRel;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -287,13 +287,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="RelWithDebInfo";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QSCINTILLA_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR="RelWithDebInfo";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QSCINTILLA_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";nddPlugCN2TCConvert_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo;F:\myproj\notepad--master\notepad--\src;F:\myproj\nddPlugCN2TCConvert\src;F:\libsrc\OpenCC\src;F:\myproj\notepad--master\notepad--\src\qscint\src;F:\myproj\notepad--master\notepad--\src\qscint\src\Qsci;H:\develop\Qt\5.15.2\msvc2019_64\include;H:\develop\Qt\5.15.2\msvc2019_64\include\QtCore;H:\develop\Qt\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;H:\develop\Qt\5.15.2\msvc2019_64\include\QtGui;H:\develop\Qt\5.15.2\msvc2019_64\include\QtANGLE;H:\develop\Qt\5.15.2\msvc2019_64\include\QtWidgets;H:\develop\Qt\5.15.2\msvc2019_64\include\QtConcurrent;H:\develop\Qt\5.15.2\msvc2019_64\include\QtNetwork;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -464,16 +464,25 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\ScintillaEditor.cpp" />
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_Debug.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\ch2tcexport.cpp" />
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\coreApplication.cpp" />
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.cpp" />
-    <ClInclude Include="..\src\util.hpp" />
+    <ClInclude Include="..\src\ScintillaEditor.h" />
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\ch2tcexport.h" />
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\coreApplication.h" />
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\openccTranse.h" />
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.h" />
+    <ClInclude Include="resource.h" />
+    <None Include="..\doc\details.html">
+      <DependentUpon>..\doc\details.md</DependentUpon>
+    </None>
+    <None Include="..\doc\details.md" />
     <None Include="F:\myproj\nddPlugCN2TCConvert\ui\qtconvclass.ui">
     </None>
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_Debug\ui\ui_qtconvclass.h" />
@@ -511,6 +520,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nddPlugCN2TCConvert.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

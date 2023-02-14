@@ -42,7 +42,7 @@ set(LIB_QSCINT_RELEASE  ${QSCINT_BUILD_PATH}/Release/qmyedit_qt5.dll CACHE FILEP
 set(LIB_QSCINT_DEBUG    ${QSCINT_BUILD_PATH}/Debug/qmyedit_qt5d.dll   CACHE FILEPATH "specify the qscintilla codeeditor debug dll file"  )	
 				#add_library(qscint SHARED IMPORTED GLOBAL)
 add_library(qscint SHARED IMPORTED)
-
+add_definitions(-DQSCINTILLA_DLL)
 set_target_properties(qscint PROPERTIES
   IMPORTED_LOCATION_RELEASE "${LIB_QSCINT_RELEASE}"
   IMPORTED_LOCATION_DEBUG "${LIB_QSCINT_DEBUG}"
@@ -70,5 +70,5 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 ######### link libs
 target_link_libraries (${PROJECT_NAME} libopencc  ${QTMODULES} qscint)
 
-
+set_target_properties(${PROJECT_NAME} PROPERTIES LIBRARY_OUTPUT_DIRECTORY fuck)
 

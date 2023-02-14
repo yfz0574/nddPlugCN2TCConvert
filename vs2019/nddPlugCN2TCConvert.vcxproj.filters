@@ -7,6 +7,9 @@
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\ch2tcexport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\coreApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\src\qtconvclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -19,8 +22,17 @@
     <ClCompile Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\mocs_compilation_RelWithDebInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\ScintillaEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\ch2tcexport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\coreApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\src\openccTranse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -39,9 +51,10 @@
     <ClInclude Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\include_RelWithDebInfo\ui\ui_qtconvclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\util.hpp">
+    <ClInclude Include="..\src\ScintillaEditor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="F:\myproj\nddPlugCN2TCConvert\vs2019\CMakeFiles\2a1227a3c12c4022621e8ce5ae5e41d4\autouic_(CONFIG).stamp.rule">
@@ -55,6 +68,9 @@
     <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_Release.stamp" />
     <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_MinSizeRel.stamp" />
     <None Include="F:\myproj\nddPlugCN2TCConvert\vs2019\nddPlugCN2TCConvert_autogen\autouic_RelWithDebInfo.stamp" />
+    <None Include="..\doc\details.md">
+      <Filter>doc</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
@@ -66,5 +82,14 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{0C77DC51-D107-3829-A372-177CCE82B424}</UniqueIdentifier>
     </Filter>
+    <Filter Include="images">
+      <UniqueIdentifier>{e1917fcf-2fe5-4a43-847d-0afdfb2e41b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{76f34d03-d820-417c-91ff-ff298b429a6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nddPlugCN2TCConvert.rc" />
   </ItemGroup>
 </Project>

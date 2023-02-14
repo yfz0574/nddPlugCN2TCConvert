@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <fstream>
 //#include "CmdLineOutput.hpp"
 //#include "Config.hpp"
@@ -26,14 +26,14 @@
 
 
 using namespace opencc;
-//#define OPENCC_ENABLE_DARTS //¶¨ÒåÊ¹ÓÃ¶ş½øÖÆ´Êµä£¬ĞèÒªÌá¹©×ª»»ºÃµÄ¶ş½øÖÆ´Êµä
+//#define OPENCC_ENABLE_DARTS //å®šä¹‰ä½¿ç”¨äºŒè¿›åˆ¶è¯å…¸ï¼Œéœ€è¦æä¾›è½¬æ¢å¥½çš„äºŒè¿›åˆ¶è¯å…¸
 
 class openccTranse
 {
 public:
     openccTranse();
     ConverterPtr converter;
-    std::string convertText(const std::string text);//±ØĞëÊÇutf-8ÎÄ±¾
+    std::string convertText(const std::string text);//å¿…é¡»æ˜¯utf-8æ–‡æœ¬
 
 public:
     Optional<std::string> inputFileName_ = Optional<std::string>::Null();
