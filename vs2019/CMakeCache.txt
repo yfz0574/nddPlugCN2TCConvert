@@ -170,11 +170,14 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 
-//specify the opencc debug dll file
-LIB_OPENCC_DEBUG:FILEPATH=F:/libsrc/OpenCC/build/src/Debug/opencc.dll
+//specify the opencc debug static lib file
+LIB_OPENCC_DEBUG:FILEPATH=F:/libsrc/OpenCC/buildlib/src/Debug/opencc.lib
 
-//specify the opencc release dll file
-LIB_OPENCC_RELEASE:FILEPATH=F:/libsrc/OpenCC/build/src/Release/opencc.dll
+//specify the opencc release static lib file
+LIB_OPENCC_RELEASE:FILEPATH=F:/libsrc/OpenCC/buildlib/src/Release/opencc.lib
+
+//static link for libopencc
+LIB_OPENCC_STATIC:BOOL=ON
 
 //specify the qscintilla codeeditor debug dll file
 LIB_QSCINT_DEBUG:FILEPATH=F:/myproj/notepad--master/notepad--/build/Debug/qmyedit_qt5d.dll
@@ -186,7 +189,7 @@ LIB_QSCINT_RELEASE:FILEPATH=F:/myproj/notepad--master/notepad--/build/Release/qm
 NDD_ROOT:PATH=F:/myproj/notepad--master/notepad--
 
 //specify the OPENCC lib's build path
-OPENCC_BUILD_PATH:PATH=F:/libsrc/OpenCC/build
+OPENCC_BUILD_PATH:PATH=F:/libsrc/OpenCC/buildlib
 
 //specify the opencc source main path
 OPENCC_PATH:PATH=F:/libsrc/OpenCC

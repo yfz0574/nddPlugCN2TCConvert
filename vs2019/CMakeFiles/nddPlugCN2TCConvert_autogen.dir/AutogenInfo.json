@@ -65,11 +65,17 @@
 		"H:/develop/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfigVersion.cmake",
 		"H:/develop/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "F:/myproj/nddPlugCN2TCConvert",
+	"CMAKE_SOURCE_DIR" : "F:/myproj/nddPlugCN2TCConvert/",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
+		[
+			"F:/myproj/nddPlugCN2TCConvert/src/ScintillaEditor.h",
+			"MU",
+			"UVLADIE3JM/moc_ScintillaEditor.cpp",
+			null
+		],
 		[
 			"F:/myproj/nddPlugCN2TCConvert/src/ch2tcexport.h",
 			"MU",
@@ -177,6 +183,7 @@
 	"SETTINGS_FILE_Release" : "F:/myproj/nddPlugCN2TCConvert/vs2019/CMakeFiles/nddPlugCN2TCConvert_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
+		[ "F:/myproj/nddPlugCN2TCConvert/src/ScintillaEditor.cpp", "MU", null ],
 		[ "F:/myproj/nddPlugCN2TCConvert/src/ch2tcexport.cpp", "MU", null ],
 		[ "F:/myproj/nddPlugCN2TCConvert/src/coreApplication.cpp", "MU", null ],
 		[ "F:/myproj/nddPlugCN2TCConvert/src/qtconvclass.cpp", "MU", null ]

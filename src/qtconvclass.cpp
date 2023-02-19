@@ -48,7 +48,7 @@ void QtConvClass::getConvMenu(QMenu* menu)
 {
 	//QMessageBox msgBox;
 	//msgBox.setText(reinterpret_cast<const char*>(u8"进入了getConvMenu()#39！"));
-
+	//TODO::翻译 HOTKEY
 	menu->addAction(reinterpret_cast<const char*>(u8"简体转繁体"),  [this] {
 		on_s2t();
 		},
@@ -117,7 +117,7 @@ void QtConvClass::on_s2t() {
 	if (codepage != SC_CP_UTF8)
 	{
 		QMessageBox msgBox;
-		msgBox.setText(reinterpret_cast<const char*>(u8"暂未支持非UTF8编码的文件！"));
+		msgBox.setText(reinterpret_cast<const char*>(u8"暂未支持非UTF8编码的文件！"));//TODO::翻译
 		//msgBox.setInformativeText("Do you want to save your changes?");
 		//msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
 		//msgBox.setDefaultButton(QMessageBox::Save);
@@ -166,7 +166,7 @@ void QtConvClass::on_t2s() {
 	if (codepage != SC_CP_UTF8)
 	{
 		QMessageBox msgBox;
-		msgBox.setText(reinterpret_cast<const char*>(u8"暂未支持非UTF8编码的文件！"));
+		msgBox.setText(reinterpret_cast<const char*>(u8"暂未支持非UTF8编码的文件！"));//TODO::翻译
 		//msgBox.setInformativeText("Do you want to save your changes?");
 		//msgBox.setStandardButtons(QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
 		//msgBox.setDefaultButton(QMessageBox::Save);
@@ -191,7 +191,7 @@ void QtConvClass::on_t2s() {
 			QMessageBox msgBox;
 			
 			QString  errstr;
-			errstr = reinterpret_cast<const char*>(u8"转换失败！原因为：");
+			errstr = reinterpret_cast<const char*>(u8"转换失败！原因为：");//TODO::翻译
 			errstr += opencc_error();
 			msgBox.setText(errstr);
 			//msgBox.setInformativeText("Do you want to save your changes?");
@@ -212,7 +212,7 @@ void QtConvClass::on_t2s() {
 		
 		QMessageBox msgBox;
 		QString  errstr;
-		errstr = reinterpret_cast<const char*>(u8"转换失败！原因为：");
+		errstr = reinterpret_cast<const char*>(u8"转换失败！原因为：");//TODO::翻译
 		//errstr += opencc_error();
 		errstr += ex.what();
 		msgBox.setText(errstr);
@@ -238,7 +238,7 @@ std::string QtConvClass::convertText(const std::string text) {
 	std::string res = reinterpret_cast<const char*>(u8"");
 	if (text.length() > maxS2tTextLen_)
 	{
-		res= reinterpret_cast < const char*>(u8"超过最大长度限制");
+		res= reinterpret_cast < const char*>(u8"超过最大长度限制");//TODO::翻译
 		return res;
 	}
 	openccTranse transe;

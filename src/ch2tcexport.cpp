@@ -50,6 +50,7 @@ bool NDD_PROC_IDENTIFY(NDD_PROC_DATA* pProcData)
 	{
 		return false;
 	}
+	//TODO::翻译
 	pProcData->m_strPlugName = reinterpret_cast<const char*>(u8"简繁体转换");
 	pProcData->m_strComment = reinterpret_cast<const char*>(u8"简繁体转换插件，可自定义词库.");
 
@@ -87,8 +88,7 @@ int NDD_PROC_MAIN(QWidget* pNotepad, const QString& strFileName, std::function<Q
 		// 如 果 pProcData->m_menuType = 1; 是 自 己 要 创 建 二 级 菜 单 的 场 景 。 则 通 过s_procData.m_rootMenu 获取该插件的菜单根节点。
 		//插件开发者自行在 s_procData.m_rootMenu 下添加新的二级菜单项目
 
-	//TODO: 子菜单关联上on_s2t()和on_t2s().
-	
+		
 	//后续就是自行绑定 pAction 的执行槽函数。后面通过点击菜单上面的按钮，进行槽函数的
 	//触发调用。
 	//nddJsonPlugin = new NDDJsonPlugin(s_pMainNotepad, strFileName, nullptr, s_pMainNotepad);
